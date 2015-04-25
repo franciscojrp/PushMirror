@@ -17,8 +17,15 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="YK0-B8-r7K">
+                                <rect key="frame" x="172" y="72" width="256" height="256"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="256" id="aIM-VA-rwd"/>
+                                    <constraint firstAttribute="height" constant="256" id="bpp-aY-wDc"/>
+                                </constraints>
+                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gw0-s6-d6u">
-                                <rect key="frame" x="252" y="266" width="97" height="67"/>
+                                <rect key="frame" x="252" y="378" width="97" height="67"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="46"/>
                                 <state key="normal" title="Start">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -30,8 +37,10 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstAttribute="centerY" secondItem="gw0-s6-d6u" secondAttribute="centerY" id="3Cd-ip-0Z5"/>
+                            <constraint firstAttribute="centerX" secondItem="YK0-B8-r7K" secondAttribute="centerX" id="E3k-gc-iEl"/>
+                            <constraint firstAttribute="centerY" secondItem="YK0-B8-r7K" secondAttribute="centerY" constant="100" id="Oyx-uE-ZvL"/>
                             <constraint firstAttribute="centerX" secondItem="gw0-s6-d6u" secondAttribute="centerX" id="eYb-QC-zaV"/>
+                            <constraint firstAttribute="centerY" secondItem="gw0-s6-d6u" secondAttribute="centerY" constant="-111.5" id="rD8-bu-gAE"/>
                         </constraints>
                     </view>
                     <connections>
@@ -43,4 +52,7 @@
             <point key="canvasLocation" x="307" y="437"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="logo" width="341" height="341"/>
+    </resources>
 </document>

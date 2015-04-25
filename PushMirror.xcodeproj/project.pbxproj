@@ -12,7 +12,6 @@
 		A13C3FD91AEB944E006FE465 /* FRPInitialViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A13C3FD81AEB944E006FE465 /* FRPInitialViewController.m */; };
 		A13C3FDC1AEB944E006FE465 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A13C3FDA1AEB944E006FE465 /* Main.storyboard */; };
 		A13C3FDE1AEB944E006FE465 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A13C3FDD1AEB944E006FE465 /* Images.xcassets */; };
-		A13C3FE11AEB944E006FE465 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = A13C3FDF1AEB944E006FE465 /* LaunchScreen.xib */; };
 		A13C3FED1AEB944E006FE465 /* PushMirrorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A13C3FEC1AEB944E006FE465 /* PushMirrorTests.m */; };
 		A13C3FFD1AEB95A1006FE465 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A13C3FF71AEB95A1006FE465 /* Parse.framework */; };
 		A13C3FFE1AEB95A1006FE465 /* ParseCrashReporting.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A13C3FF81AEB95A1006FE465 /* ParseCrashReporting.framework */; };
@@ -58,7 +57,6 @@
 		A13C3FD81AEB944E006FE465 /* FRPInitialViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FRPInitialViewController.m; sourceTree = "<group>"; };
 		A13C3FDB1AEB944E006FE465 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A13C3FDD1AEB944E006FE465 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		A13C3FE01AEB944E006FE465 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		A13C3FE61AEB944E006FE465 /* PushMirrorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PushMirrorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A13C3FEB1AEB944E006FE465 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A13C3FEC1AEB944E006FE465 /* PushMirrorTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PushMirrorTests.m; sourceTree = "<group>"; };
@@ -158,7 +156,6 @@
 				A13C401F1AEB9CEA006FE465 /* FRPSignUpViewController.m */,
 				A13C3FDA1AEB944E006FE465 /* Main.storyboard */,
 				A13C3FDD1AEB944E006FE465 /* Images.xcassets */,
-				A13C3FDF1AEB944E006FE465 /* LaunchScreen.xib */,
 				A13C3FD01AEB944E006FE465 /* Supporting Files */,
 			);
 			path = PushMirror;
@@ -300,7 +297,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				A13C3FDC1AEB944E006FE465 /* Main.storyboard in Resources */,
-				A13C3FE11AEB944E006FE465 /* LaunchScreen.xib in Resources */,
 				A13C3FDE1AEB944E006FE465 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -352,14 +348,6 @@
 				A13C3FDB1AEB944E006FE465 /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		A13C3FDF1AEB944E006FE465 /* LaunchScreen.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				A13C3FE01AEB944E006FE465 /* Base */,
-			);
-			name = LaunchScreen.xib;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -451,6 +439,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -468,6 +457,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
