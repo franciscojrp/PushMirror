@@ -1,0 +1,549 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A13C3FD31AEB944E006FE465 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A13C3FD21AEB944E006FE465 /* main.m */; };
+		A13C3FD61AEB944E006FE465 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A13C3FD51AEB944E006FE465 /* AppDelegate.m */; };
+		A13C3FD91AEB944E006FE465 /* FRPInitialViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A13C3FD81AEB944E006FE465 /* FRPInitialViewController.m */; };
+		A13C3FDC1AEB944E006FE465 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A13C3FDA1AEB944E006FE465 /* Main.storyboard */; };
+		A13C3FDE1AEB944E006FE465 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A13C3FDD1AEB944E006FE465 /* Images.xcassets */; };
+		A13C3FE11AEB944E006FE465 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = A13C3FDF1AEB944E006FE465 /* LaunchScreen.xib */; };
+		A13C3FED1AEB944E006FE465 /* PushMirrorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A13C3FEC1AEB944E006FE465 /* PushMirrorTests.m */; };
+		A13C3FFD1AEB95A1006FE465 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A13C3FF71AEB95A1006FE465 /* Parse.framework */; };
+		A13C3FFE1AEB95A1006FE465 /* ParseCrashReporting.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A13C3FF81AEB95A1006FE465 /* ParseCrashReporting.framework */; };
+		A13C40001AEB95A1006FE465 /* ParseFacebookUtilsV4.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A13C3FFA1AEB95A1006FE465 /* ParseFacebookUtilsV4.framework */; };
+		A13C40011AEB95A1006FE465 /* ParseUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A13C3FFB1AEB95A1006FE465 /* ParseUI.framework */; };
+		A13C40041AEB967D006FE465 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A13C40031AEB967D006FE465 /* AudioToolbox.framework */; };
+		A13C40061AEB9690006FE465 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A13C40051AEB9690006FE465 /* CFNetwork.framework */; };
+		A13C40081AEB9696006FE465 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A13C40071AEB9696006FE465 /* CoreGraphics.framework */; };
+		A13C400A1AEB96A0006FE465 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A13C40091AEB96A0006FE465 /* QuartzCore.framework */; };
+		A13C400C1AEB96AB006FE465 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A13C400B1AEB96AB006FE465 /* Security.framework */; };
+		A13C400E1AEB96AF006FE465 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A13C400D1AEB96AF006FE465 /* StoreKit.framework */; };
+		A13C40101AEB96BA006FE465 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A13C400F1AEB96BA006FE465 /* SystemConfiguration.framework */; };
+		A13C40121AEB96C1006FE465 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = A13C40111AEB96C1006FE465 /* libz.dylib */; };
+		A13C40141AEB96CC006FE465 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = A13C40131AEB96CC006FE465 /* libsqlite3.dylib */; };
+		A13C40161AEB9812006FE465 /* Accounts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A13C40151AEB9812006FE465 /* Accounts.framework */; };
+		A13C40181AEB9817006FE465 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A13C40171AEB9817006FE465 /* Social.framework */; };
+		A13C401A1AEB9832006FE465 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A13C40191AEB9832006FE465 /* MobileCoreServices.framework */; };
+		A13C401D1AEB9C22006FE465 /* FRPLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A13C401C1AEB9C22006FE465 /* FRPLoginViewController.m */; };
+		A13C40201AEB9CEA006FE465 /* FRPSignUpViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A13C401F1AEB9CEA006FE465 /* FRPSignUpViewController.m */; };
+		A13C40261AEBA0B4006FE465 /* FacebookSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A13C40251AEBA0B4006FE465 /* FacebookSDK.framework */; };
+		A13C40291AEBA0CD006FE465 /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A13C40271AEBA0CD006FE465 /* FBSDKCoreKit.framework */; };
+		A13C402A1AEBA0CD006FE465 /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A13C40281AEBA0CD006FE465 /* FBSDKLoginKit.framework */; };
+		A13C40301AEBA1F7006FE465 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A13C402F1AEBA1F7006FE465 /* Bolts.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A13C3FE71AEB944E006FE465 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A13C3FC51AEB944E006FE465 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A13C3FCC1AEB944E006FE465;
+			remoteInfo = PushMirror;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		A13C3FCD1AEB944E006FE465 /* PushMirror.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PushMirror.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A13C3FD11AEB944E006FE465 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A13C3FD21AEB944E006FE465 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		A13C3FD41AEB944E006FE465 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		A13C3FD51AEB944E006FE465 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		A13C3FD71AEB944E006FE465 /* FRPInitialViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FRPInitialViewController.h; sourceTree = "<group>"; };
+		A13C3FD81AEB944E006FE465 /* FRPInitialViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FRPInitialViewController.m; sourceTree = "<group>"; };
+		A13C3FDB1AEB944E006FE465 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A13C3FDD1AEB944E006FE465 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		A13C3FE01AEB944E006FE465 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		A13C3FE61AEB944E006FE465 /* PushMirrorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PushMirrorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A13C3FEB1AEB944E006FE465 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A13C3FEC1AEB944E006FE465 /* PushMirrorTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PushMirrorTests.m; sourceTree = "<group>"; };
+		A13C3FF71AEB95A1006FE465 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
+		A13C3FF81AEB95A1006FE465 /* ParseCrashReporting.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ParseCrashReporting.framework; sourceTree = "<group>"; };
+		A13C3FFA1AEB95A1006FE465 /* ParseFacebookUtilsV4.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ParseFacebookUtilsV4.framework; sourceTree = "<group>"; };
+		A13C3FFB1AEB95A1006FE465 /* ParseUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ParseUI.framework; sourceTree = "<group>"; };
+		A13C40031AEB967D006FE465 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		A13C40051AEB9690006FE465 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		A13C40071AEB9696006FE465 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		A13C40091AEB96A0006FE465 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		A13C400B1AEB96AB006FE465 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		A13C400D1AEB96AF006FE465 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		A13C400F1AEB96BA006FE465 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		A13C40111AEB96C1006FE465 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		A13C40131AEB96CC006FE465 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
+		A13C40151AEB9812006FE465 /* Accounts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accounts.framework; path = System/Library/Frameworks/Accounts.framework; sourceTree = SDKROOT; };
+		A13C40171AEB9817006FE465 /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
+		A13C40191AEB9832006FE465 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		A13C401B1AEB9C22006FE465 /* FRPLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FRPLoginViewController.h; sourceTree = "<group>"; };
+		A13C401C1AEB9C22006FE465 /* FRPLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FRPLoginViewController.m; sourceTree = "<group>"; };
+		A13C401E1AEB9CEA006FE465 /* FRPSignUpViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FRPSignUpViewController.h; sourceTree = "<group>"; };
+		A13C401F1AEB9CEA006FE465 /* FRPSignUpViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FRPSignUpViewController.m; sourceTree = "<group>"; };
+		A13C40251AEBA0B4006FE465 /* FacebookSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FacebookSDK.framework; sourceTree = "<group>"; };
+		A13C40271AEBA0CD006FE465 /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKCoreKit.framework; sourceTree = "<group>"; };
+		A13C40281AEBA0CD006FE465 /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKLoginKit.framework; sourceTree = "<group>"; };
+		A13C402F1AEBA1F7006FE465 /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A13C3FCA1AEB944E006FE465 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A13C401A1AEB9832006FE465 /* MobileCoreServices.framework in Frameworks */,
+				A13C40181AEB9817006FE465 /* Social.framework in Frameworks */,
+				A13C40161AEB9812006FE465 /* Accounts.framework in Frameworks */,
+				A13C40141AEB96CC006FE465 /* libsqlite3.dylib in Frameworks */,
+				A13C40121AEB96C1006FE465 /* libz.dylib in Frameworks */,
+				A13C40291AEBA0CD006FE465 /* FBSDKCoreKit.framework in Frameworks */,
+				A13C40101AEB96BA006FE465 /* SystemConfiguration.framework in Frameworks */,
+				A13C400E1AEB96AF006FE465 /* StoreKit.framework in Frameworks */,
+				A13C400C1AEB96AB006FE465 /* Security.framework in Frameworks */,
+				A13C400A1AEB96A0006FE465 /* QuartzCore.framework in Frameworks */,
+				A13C40081AEB9696006FE465 /* CoreGraphics.framework in Frameworks */,
+				A13C402A1AEBA0CD006FE465 /* FBSDKLoginKit.framework in Frameworks */,
+				A13C40061AEB9690006FE465 /* CFNetwork.framework in Frameworks */,
+				A13C40041AEB967D006FE465 /* AudioToolbox.framework in Frameworks */,
+				A13C40011AEB95A1006FE465 /* ParseUI.framework in Frameworks */,
+				A13C40301AEBA1F7006FE465 /* Bolts.framework in Frameworks */,
+				A13C3FFD1AEB95A1006FE465 /* Parse.framework in Frameworks */,
+				A13C3FFE1AEB95A1006FE465 /* ParseCrashReporting.framework in Frameworks */,
+				A13C40001AEB95A1006FE465 /* ParseFacebookUtilsV4.framework in Frameworks */,
+				A13C40261AEBA0B4006FE465 /* FacebookSDK.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A13C3FE31AEB944E006FE465 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A13C3FC41AEB944E006FE465 = {
+			isa = PBXGroup;
+			children = (
+				A13C3FCF1AEB944E006FE465 /* PushMirror */,
+				A13C3FE91AEB944E006FE465 /* PushMirrorTests */,
+				A13C3FCE1AEB944E006FE465 /* Products */,
+				A13C40021AEB95A6006FE465 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		A13C3FCE1AEB944E006FE465 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A13C3FCD1AEB944E006FE465 /* PushMirror.app */,
+				A13C3FE61AEB944E006FE465 /* PushMirrorTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A13C3FCF1AEB944E006FE465 /* PushMirror */ = {
+			isa = PBXGroup;
+			children = (
+				A13C3FD41AEB944E006FE465 /* AppDelegate.h */,
+				A13C3FD51AEB944E006FE465 /* AppDelegate.m */,
+				A13C3FD71AEB944E006FE465 /* FRPInitialViewController.h */,
+				A13C3FD81AEB944E006FE465 /* FRPInitialViewController.m */,
+				A13C401B1AEB9C22006FE465 /* FRPLoginViewController.h */,
+				A13C401C1AEB9C22006FE465 /* FRPLoginViewController.m */,
+				A13C401E1AEB9CEA006FE465 /* FRPSignUpViewController.h */,
+				A13C401F1AEB9CEA006FE465 /* FRPSignUpViewController.m */,
+				A13C3FDA1AEB944E006FE465 /* Main.storyboard */,
+				A13C3FDD1AEB944E006FE465 /* Images.xcassets */,
+				A13C3FDF1AEB944E006FE465 /* LaunchScreen.xib */,
+				A13C3FD01AEB944E006FE465 /* Supporting Files */,
+			);
+			path = PushMirror;
+			sourceTree = "<group>";
+		};
+		A13C3FD01AEB944E006FE465 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A13C3FD11AEB944E006FE465 /* Info.plist */,
+				A13C3FD21AEB944E006FE465 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A13C3FE91AEB944E006FE465 /* PushMirrorTests */ = {
+			isa = PBXGroup;
+			children = (
+				A13C3FEC1AEB944E006FE465 /* PushMirrorTests.m */,
+				A13C3FEA1AEB944E006FE465 /* Supporting Files */,
+			);
+			path = PushMirrorTests;
+			sourceTree = "<group>";
+		};
+		A13C3FEA1AEB944E006FE465 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A13C3FEB1AEB944E006FE465 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A13C40021AEB95A6006FE465 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A13C40251AEBA0B4006FE465 /* FacebookSDK.framework */,
+				A13C40271AEBA0CD006FE465 /* FBSDKCoreKit.framework */,
+				A13C40281AEBA0CD006FE465 /* FBSDKLoginKit.framework */,
+				A13C40191AEB9832006FE465 /* MobileCoreServices.framework */,
+				A13C40171AEB9817006FE465 /* Social.framework */,
+				A13C40151AEB9812006FE465 /* Accounts.framework */,
+				A13C40131AEB96CC006FE465 /* libsqlite3.dylib */,
+				A13C40111AEB96C1006FE465 /* libz.dylib */,
+				A13C402F1AEBA1F7006FE465 /* Bolts.framework */,
+				A13C400F1AEB96BA006FE465 /* SystemConfiguration.framework */,
+				A13C400D1AEB96AF006FE465 /* StoreKit.framework */,
+				A13C400B1AEB96AB006FE465 /* Security.framework */,
+				A13C40091AEB96A0006FE465 /* QuartzCore.framework */,
+				A13C40071AEB9696006FE465 /* CoreGraphics.framework */,
+				A13C40051AEB9690006FE465 /* CFNetwork.framework */,
+				A13C40031AEB967D006FE465 /* AudioToolbox.framework */,
+				A13C3FF71AEB95A1006FE465 /* Parse.framework */,
+				A13C3FF81AEB95A1006FE465 /* ParseCrashReporting.framework */,
+				A13C3FFA1AEB95A1006FE465 /* ParseFacebookUtilsV4.framework */,
+				A13C3FFB1AEB95A1006FE465 /* ParseUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A13C3FCC1AEB944E006FE465 /* PushMirror */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A13C3FF01AEB944E006FE465 /* Build configuration list for PBXNativeTarget "PushMirror" */;
+			buildPhases = (
+				A13C3FC91AEB944E006FE465 /* Sources */,
+				A13C3FCA1AEB944E006FE465 /* Frameworks */,
+				A13C3FCB1AEB944E006FE465 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PushMirror;
+			productName = PushMirror;
+			productReference = A13C3FCD1AEB944E006FE465 /* PushMirror.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A13C3FE51AEB944E006FE465 /* PushMirrorTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A13C3FF31AEB944E006FE465 /* Build configuration list for PBXNativeTarget "PushMirrorTests" */;
+			buildPhases = (
+				A13C3FE21AEB944E006FE465 /* Sources */,
+				A13C3FE31AEB944E006FE465 /* Frameworks */,
+				A13C3FE41AEB944E006FE465 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A13C3FE81AEB944E006FE465 /* PBXTargetDependency */,
+			);
+			name = PushMirrorTests;
+			productName = PushMirrorTests;
+			productReference = A13C3FE61AEB944E006FE465 /* PushMirrorTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A13C3FC51AEB944E006FE465 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = FRP;
+				LastUpgradeCheck = 0630;
+				ORGANIZATIONNAME = franciscojrp;
+				TargetAttributes = {
+					A13C3FCC1AEB944E006FE465 = {
+						CreatedOnToolsVersion = 6.3;
+						DevelopmentTeam = SQ7AH2ASSE;
+					};
+					A13C3FE51AEB944E006FE465 = {
+						CreatedOnToolsVersion = 6.3;
+						TestTargetID = A13C3FCC1AEB944E006FE465;
+					};
+				};
+			};
+			buildConfigurationList = A13C3FC81AEB944E006FE465 /* Build configuration list for PBXProject "PushMirror" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A13C3FC41AEB944E006FE465;
+			productRefGroup = A13C3FCE1AEB944E006FE465 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A13C3FCC1AEB944E006FE465 /* PushMirror */,
+				A13C3FE51AEB944E006FE465 /* PushMirrorTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A13C3FCB1AEB944E006FE465 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A13C3FDC1AEB944E006FE465 /* Main.storyboard in Resources */,
+				A13C3FE11AEB944E006FE465 /* LaunchScreen.xib in Resources */,
+				A13C3FDE1AEB944E006FE465 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A13C3FE41AEB944E006FE465 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A13C3FC91AEB944E006FE465 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A13C3FD91AEB944E006FE465 /* FRPInitialViewController.m in Sources */,
+				A13C3FD61AEB944E006FE465 /* AppDelegate.m in Sources */,
+				A13C40201AEB9CEA006FE465 /* FRPSignUpViewController.m in Sources */,
+				A13C3FD31AEB944E006FE465 /* main.m in Sources */,
+				A13C401D1AEB9C22006FE465 /* FRPLoginViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A13C3FE21AEB944E006FE465 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A13C3FED1AEB944E006FE465 /* PushMirrorTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A13C3FE81AEB944E006FE465 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A13C3FCC1AEB944E006FE465 /* PushMirror */;
+			targetProxy = A13C3FE71AEB944E006FE465 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		A13C3FDA1AEB944E006FE465 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A13C3FDB1AEB944E006FE465 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		A13C3FDF1AEB944E006FE465 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A13C3FE01AEB944E006FE465 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A13C3FEE1AEB944E006FE465 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A13C3FEF1AEB944E006FE465 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A13C3FF11AEB944E006FE465 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/PushMirror.xcodeproj",
+				);
+				INFOPLIST_FILE = PushMirror/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		A13C3FF21AEB944E006FE465 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/PushMirror.xcodeproj",
+				);
+				INFOPLIST_FILE = PushMirror/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		A13C3FF41AEB944E006FE465 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = PushMirrorTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PushMirror.app/PushMirror";
+			};
+			name = Debug;
+		};
+		A13C3FF51AEB944E006FE465 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = PushMirrorTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PushMirror.app/PushMirror";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A13C3FC81AEB944E006FE465 /* Build configuration list for PBXProject "PushMirror" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A13C3FEE1AEB944E006FE465 /* Debug */,
+				A13C3FEF1AEB944E006FE465 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A13C3FF01AEB944E006FE465 /* Build configuration list for PBXNativeTarget "PushMirror" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A13C3FF11AEB944E006FE465 /* Debug */,
+				A13C3FF21AEB944E006FE465 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		A13C3FF31AEB944E006FE465 /* Build configuration list for PBXNativeTarget "PushMirrorTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A13C3FF41AEB944E006FE465 /* Debug */,
+				A13C3FF51AEB944E006FE465 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A13C3FC51AEB944E006FE465 /* Project object */;
+}
