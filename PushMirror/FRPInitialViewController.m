@@ -26,12 +26,12 @@
 
     if ([PFUser currentUser]) {
         [self.mainButton setTitle:@"Log out" forState:UIControlStateNormal];
-    }
 
-    // Associate the device with a user
-    PFInstallation *installation = [PFInstallation currentInstallation];
-    installation[@"user"] = [PFUser currentUser];
-    [installation saveInBackground];
+        // Associate the device with a user
+        PFInstallation *installation = [PFInstallation currentInstallation];
+        installation[@"user"] = [PFUser currentUser];
+        [installation saveInBackground];
+    }
 }
 
 - (IBAction)mainButtonPressed:(id)sender {
@@ -52,8 +52,12 @@
         // Present the log in view controller
         [self presentViewController:logInViewController animated:NO completion:NULL];
     } else {
-        [PFUser logOut];
+        [PFUser logOutInBackground];
         [self.mainButton setTitle:@"Start" forState:UIControlStateNormal];
+
+        PFInstallation *installation = [PFInstallation currentInstallation];
+        [installation removeObjectForKey:@"user"];
+        [installation saveInBackground];
     }
 }
 
