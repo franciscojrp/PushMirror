@@ -524,6 +524,7 @@
 				A13C3FF21AEB944E006FE465 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A13C3FF31AEB944E006FE465 /* Build configuration list for PBXNativeTarget "PushMirrorTests" */ = {
 			isa = XCConfigurationList;
@@ -532,6 +533,7 @@
 				A13C3FF51AEB944E006FE465 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -21,12 +21,17 @@
 
 @implementation FRPInitialViewController
 
-- (void)viewDidLoad {
-    [super viewDidLoad];
+- (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
 
-    if ([PFUser currentUser]) { // No user logged in
-        [self.mainButton setTitle:@"Stop" forState:UIControlStateNormal];
+    if ([PFUser currentUser]) {
+        [self.mainButton setTitle:@"Log out" forState:UIControlStateNormal];
     }
+
+    // Associate the device with a user
+    PFInstallation *installation = [PFInstallation currentInstallation];
+    installation[@"user"] = [PFUser currentUser];
+    [installation saveInBackground];
 }
 
 - (IBAction)mainButtonPressed:(id)sender {
@@ -47,7 +52,8 @@
         // Present the log in view controller
         [self presentViewController:logInViewController animated:NO completion:NULL];
     } else {
-        //TODO: Start/stop: store a setting in the server to send pushes or not
+        [PFUser logOut];
+        [self.mainButton setTitle:@"Start" forState:UIControlStateNormal];
     }
 }
 
